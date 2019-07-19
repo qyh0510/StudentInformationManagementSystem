@@ -47,7 +47,7 @@ public class LoginView extends JFrame {
 		jTextField1.setBounds(140, 103, 140, 30);
 		jLayeredPane1.add(jTextField1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-		jButton1.setText("µÇÂ½");
+		jButton1.setText("\u767B\u5F55");
 		jButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 		jButton1.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent evt) {

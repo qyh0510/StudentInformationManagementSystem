@@ -50,7 +50,6 @@ public class TeditScoreView extends JFrame {
 		this.cno = cno;
 		teacher = new TeacherAction();
 
-		setTitle("\u4FEE\u6539\u5BC6\u7801");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
@@ -80,15 +79,21 @@ public class TeditScoreView extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				sno = textField.getText();
 				grade = textField_1.getText();
-				int i = teacher.editGrade(id, cno, sno, grade);
-				if(i == 0) {
-					JOptionPane.showMessageDialog(textField_1, "输入学号有误");
-				}else if(i == 2) {
-					JOptionPane.showMessageDialog(textField_1, "您输入的成绩不在合法范围内");
-				}else {
-					JOptionPane.showMessageDialog(textField_1, "修改成功");
-				}
 				
+				if (sno == null || sno.equals("")) {
+					JOptionPane.showMessageDialog(textField_1, "请输入学号");
+				} else if (grade == null || grade.equals("")) {
+					JOptionPane.showMessageDialog(textField_1, "请输入新成绩");
+				} else {
+					int i = teacher.editGrade(id, cno, sno, grade);
+					if(i == 0) {
+						JOptionPane.showMessageDialog(textField_1, "输入学号有误");
+					}else if(i == 2) {
+						JOptionPane.showMessageDialog(textField_1, "您输入的成绩不在合法范围内");
+					}else {
+						JOptionPane.showMessageDialog(textField_1, "修改成功");
+					}
+				}
 			}
 		});
 		button.setBounds(162, 154, 93, 23);

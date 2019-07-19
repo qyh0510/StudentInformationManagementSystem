@@ -84,8 +84,10 @@ public class TeacherAction implements TeacherService {
 		if(data.findCourseCno(cno) == 1) {
 			String jno1 = data.searchCourseTeacher(cno);
 			String jno2 = data.findJno(id);
-			if(jno1.equals(jno2)) {
-				return 1;
+			if(jno1 != null) {
+				if(jno1.equals(jno2)) {
+					return 1;
+				}
 			}
 			return 0;
 		}

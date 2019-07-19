@@ -109,7 +109,7 @@ public class AdminView extends JFrame {
 		button_4.setBounds(172, 213, 93, 23);
 		contentPane.add(button_4);
 
-		JLabel lblnull = new JLabel("欢迎" + id + "号管理员登陆");
+		JLabel lblnull = new JLabel("欢迎" + id + "号管理员登录");
 		lblnull.setBounds(14, 13, 199, 23);
 		contentPane.add(lblnull);
 	}

@@ -49,7 +49,7 @@ public class StudentView extends JFrame implements ActionListener {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel label = new JLabel("»¶Ó­" + student.searchName(id) + "µÇÂ½");
+		JLabel label = new JLabel("»¶Ó­" + student.searchName(id) + "µÇÂ¼");
 		label.setBounds(14, 13, 209, 24);
 		contentPane.add(label);
 

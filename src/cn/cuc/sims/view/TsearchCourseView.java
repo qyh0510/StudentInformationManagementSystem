@@ -46,7 +46,6 @@ public class TsearchCourseView extends JFrame {
 		this.id = id;
 		teacher = new TeacherAction();
 		
-		setTitle("\u67E5\u8BE2\u5B66\u751F\u6210\u7EE9");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();

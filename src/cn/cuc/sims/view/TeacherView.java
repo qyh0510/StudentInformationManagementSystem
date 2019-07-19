@@ -51,7 +51,7 @@ public class TeacherView extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 
-		JLabel label = new JLabel("»¶Ó­" + id + "ºÅ½ÌÊ¦µÇÂ½");
+		JLabel label = new JLabel("»¶Ó­" + id + "ºÅ½ÌÊ¦µÇÂ¼");
 		label.setBounds(14, 13, 189, 23);
 		contentPane.add(label);
 

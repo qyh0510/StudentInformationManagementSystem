@@ -6,7 +6,7 @@ public class DatabaseConnection {
 	public Connection connectDB() {
 		try {
 			// 连接URL：“jdbc:mysql://服务器地址/数据库名 ，登陆用户名，密码 ”
-			Connection connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/studentmanagement?serverTimezone=UTC", "root","qyh051064728525!");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/studentmanagement?serverTimezone=UTC", "root","123456");
 			System.out.println("连接MySql server成功!");
 			return connect;
 		} catch (SQLException e) {
